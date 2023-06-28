@@ -6,5 +6,5 @@ export default function handleProfileSignup(firstName, lastName, fileName) {
     // .then((values) => console.log(values))
     // .catch((error) => console.log(error));
     .then((values) => values)
-    .catch(() => Error());
+    .catch((error) => error);
 }
