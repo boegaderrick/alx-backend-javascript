@@ -19,7 +19,7 @@ class StudentsController {
         console.log(error);
         response
           .status(500)
-          .send('This is the list of our students\nCannot load the database');
+          .send('Cannot load the database');
       });
   }
 
