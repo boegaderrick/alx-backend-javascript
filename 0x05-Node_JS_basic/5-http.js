@@ -40,6 +40,7 @@ const app = http.createServer((request, response) => {
     response.write('This is the list of our students\n');
     countStudents(process.argv[2])
       .then((outStr) => {
+        response.statusCode = 200;
         response.write(outStr.slice(0, -1));
         response.end();
       })
