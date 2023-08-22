@@ -39,7 +39,7 @@ const countStudents = function (fileName) {
 app.get('/students', (request, response) => {
   countStudents(process.argv[2])
     .then((outStr) => {
-      response.send(outStr.slice(1, -1));
+      response.send(`This is the list of our students\n${outStr.slice(0, -1)}`);
     })
     .catch((error) => {
       console.log(error);
