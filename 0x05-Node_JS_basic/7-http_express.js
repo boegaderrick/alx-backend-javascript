@@ -43,7 +43,7 @@ app.get('/students', (request, response) => {
     })
     .catch((error) => {
       console.log(error);
-      response.send('Cannot load the database');
+      response.send(`This is the list of our students\nCannot load the database`);
     });
 });
 
