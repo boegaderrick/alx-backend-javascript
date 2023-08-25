@@ -12,7 +12,7 @@ describe('Index page', function () {
   });
 });
 
-describe('Index page', function () {
+describe('Index', function () {
   it('Tests when id is a number', function () {
     request('http://localhost:7865/cart/12', (error, response, body) => {
       expect(body).to.equal('Payment methods for cart 12\n');
