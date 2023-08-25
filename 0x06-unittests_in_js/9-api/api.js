@@ -1,6 +1,13 @@
 const express = require('express');
 const app = express();
 
+
+app.get('/', (request, response) => {
+  response
+    .status(200)
+    .send('Welcome to the payment system');
+});
+
 app.get('/cart/:id', (request, response) => {
   const id = request.params.id;
   if (!isNaN(id)) {
