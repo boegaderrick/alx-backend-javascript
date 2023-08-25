@@ -2,7 +2,7 @@ const request = require('request');
 const expect = require('chai').expect;
 
 
-describe('', function () {
+describe('Index page', function () {
   it('', function () {
     request('http://localhost:7865', (error, response, body) => {
       expect(body).to.equal('Welcome to the payment system');
@@ -12,7 +12,7 @@ describe('', function () {
   });
 });
 
-describe('', function () {
+describe('Carts page', function () {
   it('', function () {
     request('http://localhost:7865/cart/12', (error, response, body) => {
       expect(body).to.equal('Payment methods for cart 12\n');
