@@ -13,7 +13,7 @@ app.get('/cart/:id', (request, response) => {
   if (!isNaN(id)) {
     response
       .status(200)
-      .send(`Payment methods for cart ${id}\n`);
+      .send(`Payment methods for cart ${id}`);
   } else {
     response
       .status(404)
