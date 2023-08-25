@@ -8,6 +8,7 @@ describe('', function () {
       expect(body).to.equal('Welcome to the payment system');
       expect(response.statusCode).to.equal(200);
       expect(response.url).to.equal('');
+      done();
     });
   });
 });
