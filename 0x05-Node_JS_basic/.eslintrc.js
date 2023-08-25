@@ -5,8 +5,8 @@ module.exports = {
     jest: true,
   },
   extends: [
-    'airbnb-base',
-    'plugin:jest/all',
+  'airbnb-base',
+  'plugin:jest/all',
   ],
   globals: {
     Atomics: 'readonly',
